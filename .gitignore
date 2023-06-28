@@ -1,0 +1,12 @@
+models/
+data/
+figures/
+archive/
+functions/__pycache__/
+.ipynb_checkpoints
+__pycache__/
+.DS_Store
+*.sh
+*.out
+*.nfs*
+*allpreds.npz
