@@ -20,7 +20,7 @@ I feel like this one is self-explanatory.
 I would recommend running the files in the following order to recreate the project (but you do you I guess).
 
 1. ```calculateSSTanoms.py``` takes the individual ensemble member files and calculates annual means. This script outputs files that contain all ensemble members (variants) for model years 1850-2100.
-2. ```train_optimalmodel.py``` is where we train the ANNs. This pulls ```preprocessing.py``` ```metrics.py``` ```ANN.py``` and ```experiment_settings.py``` from the functions/ directory and saves the individual ANNs to a models/ directory. This latter directory is not included in the repo.
+2. ```train_optimalmodel.py``` is where we train the ANNs. This calls ```preprocessing.py``` ```metrics.py``` ```ANN.py``` and ```experiment_settings.py``` from the functions/ directory and saves the individual ANNs to a models/ directory. This latter directory is not included in the repo.
 3. ```load_valmetrics.py``` loads in all the trained models and calculates the validation loss and accuracy on each network.
 4. ```load_accmetrics.py``` loads in only three best seeds at each location (based on lowest validation loss), then calculates a mega metric file for this. This is done separately because permutation importance testing takes ages so I didn't want to do it all 10 models.
 5. ```load_allpred.py``` outputs a file containing raw prediction output (1 and 0s) for the testing data at for the best three combined networks, IV_networks and EF_networks at each location.
