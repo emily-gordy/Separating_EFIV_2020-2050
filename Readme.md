@@ -1,6 +1,8 @@
 # Hello! Welcome to my repository for Gordon et. al 2023 (submitted to ERL fingers crossed)
 
-This repository contains all the code to repeat the analysis in the paper but has some requirements:
+This repository contains all the code to repeat the analysis in the paper _Separating Internal and Forced Contributions to Near Term SST predictability in the CESM2-LE_. This study is currently in review in Environmental Research Letters, and the preprint will soon be available on EarthArXiv.
+
+## Requirements:
 
 ### Environment
 All code is written in Python 3.9. On top of the basic packages (numpy, matplotlib, scipy), this project uses 
