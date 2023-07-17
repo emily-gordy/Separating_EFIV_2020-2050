@@ -1,6 +1,6 @@
 # Hello! Welcome to my repository for Gordon et. al 2023 (submitted to ERL fingers crossed)
 
-This repository contains all the code to repeat the analysis in the paper _Separating Internal and Forced Contributions to Near Term SST predictability in the CESM2-LE_. This study is currently in review in Environmental Research Letters, and the preprint will soon be available on EarthArXiv.
+This repository contains all the code to repeat the analysis in the paper _Separating Internal and Forced Contributions to Near Term SST predictability in the CESM2-LE_. This study is currently in review in Environmental Research Letters, and the preprint is available on [EarthArXiv](https://doi.org/10.31223/X5BD5J).
 
 ## Requirements:
 
