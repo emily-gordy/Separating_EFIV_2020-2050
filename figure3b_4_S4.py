@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+ #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Fri Jun 16 10:54:43 2023
@@ -340,7 +340,7 @@ def plotclusters(kclustermatIV_small,clustersel):
                 plt.vlines(0,np.min(SPG2050[predmask,:]),np.max(SPG2050[predmask,:]),color='grey',zorder=-1)
                 plt.xticks(np.arange(-10,10,2))
                 plt.xlabel('lead year')
-                plt.ylabel('Annual Mean NASPG SST')
+                plt.ylabel('Annual Mean NASPG')
                 if ipred == 1:
                     plt.legend(loc='lower left')
                 

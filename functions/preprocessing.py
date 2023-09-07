@@ -459,4 +459,26 @@ def SPGSST(daterange=[1980, 2100]):
 
     return SPG
 
+def AMO(daterange=[1980, 2100]):
+    # load in SST annual means
+    # path = "data/"
+    ds = xr.open_dataset(path+"LENS_SSTannualmean_fullfield.nc")
+    
+    lat1 = 0
+    lat2 = 80
+    lon1 = 280
+    lon2 = 360
+    
+    # grab region to calculate over
+    SST = ds.SST
+    SSTregion = SST.sel(year=slice(daterange[0],daterange[1]),lat=slice(lat1,lat2),lon=slice(lon1,lon2))
+    
+    fr = SSTregion.mean(dim="variant")
+    SST_IV = SSTregion-fr
+    
+    
+    weights = np.cos(np.deg2rad(SST_IV.lat))
+    SPG = SST_IV.weighted(
+        weights).mean(dim=("lat", "lon"))
 
+    return SPG
