@@ -1,6 +1,6 @@
-# Hello! Welcome to my repository for Gordon et. al 2023 (submitted to ERL fingers crossed)
+## Hello! Welcome to the repository for Gordon et. al 2023, _ERL_
 
-This repository contains all the code to repeat the analysis in the paper _Separating Internal and Forced Contributions to Near Term SST predictability in the CESM2-LE_. This study is currently in review in Environmental Research Letters, and the preprint is available on [EarthArXiv](https://doi.org/10.31223/X5BD5J).
+This repository contains all the code to repeat the analysis in the paper [Separating Internal and Forced Contributions to Near Term SST predictability in the CESM2-LE](https://iopscience.iop.org/article/10.1088/1748-9326/acfdbc).
 
 ## Requirements:
 
@@ -19,7 +19,7 @@ This project uses sea surface temperature output from the CESM2-LE which can be 
 I feel like this one is self-explanatory.
 
 ## Repo Contents
-I would recommend running the files in the following order to recreate the project (but you do you I guess).
+I would recommend running the files in the following order to recreate the project.
 
 1. ```calculateSSTanoms.py``` takes the individual ensemble member files and calculates annual means. This script outputs files that contain all ensemble members (variants) for model years 1850-2100.
 2. ```train_optimalmodel.py``` is where we train the ANNs. This calls ```preprocessing.py``` ```metrics.py``` ```ANN.py``` and ```experiment_settings.py``` from the functions/ directory and saves the individual ANNs to a models/ directory. This latter directory is not included in the repo.
