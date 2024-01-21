@@ -282,7 +282,7 @@ def memsplit(matin, memchoose):
 
 
 def y_onehot(Yin, ltercile, utercile):
-    Yout = np.empty(len(Yin))
+    Yout = np.zeros(len(Yin))
 
     Yout[Yin < ltercile] = 0
     Yout[(Yin >= ltercile) & (Yin < utercile)] = 1
